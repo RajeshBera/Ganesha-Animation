@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ganesh puja</title>
+</head>
+<style>
+    body {
+        padding-top: 3em;
+        background: linear-gradient(to left, rgb(255, 0, 136), rgb(0, 255, 200), rgb(255, 247, 139));
+        overflow: hidden;
+    }
+
+    img:nth-child(1) {
+        margin-top: -5.5em;
+        opacity: 0;
+        transition: 2s;
+        animation: flower 5s linear infinite;
+    }
+
+    img:nth-child(2) {
+        margin-top: -5.5em;
+        opacity: 0;
+        transition: 2s;
+        animation: flower 5s linear infinite;
+        transform: scaleX(-1);
+        margin-left: 30em;
+    }
+
+    @keyframes flower {
+        10% {
+            opacity: 0.1;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+    }
+
+
+    img:nth-child(3) {
+        position: absolute;
+        height: 30em;
+        width: 30em;
+        animation: chakra linear 10s infinite;
+        opacity: 0.51;
+        margin-top: -15em;
+        margin-left: 24em;
+
+    }
+
+    @keyframes chakra {
+        0% {
+            transform: rotate(0deg) scale(0.5);
+            filter: hue-rotate(360deg);
+        }
+
+        50% {
+            transform: rotate(360deg) scale(1.1);
+
+        }
+
+        100% {
+            transform: rotate(0deg) scale(0.5);
+
+        }
+    }
+
+    img:nth-child(4) {
+        transition: 5s;
+        border-radius: 50%;
+        margin-left: 23.8em;
+        z-index: 10;
+        position: relative;
+        transform: scale(0.6);
+        box-shadow: 0 0 10em rgb(255, 0, 119);
+        animation: ganesh linear 15s infinite;
+        opacity: 0;
+        margin-top: -15.0em;
+
+    }
+
+    @keyframes ganesh {
+        0% {
+            transform: rotate(360deg) scale(0.5);
+            box-shadow: 0 0 10em red;
+
+        }
+
+        50% {
+            transform: rotate(360deg) scale(0.8);
+            box-shadow: 0 0 10em rgb(255, 0, 13);
+
+        }
+
+        100% {
+            transform: rotate(360deg) scale(0.5);
+            box-shadow: 0 0 10em rgb(0, 255, 128);
+
+        }
+    }
+
+    .ghot {
+        height: 4em;
+        width: 4em;
+        margin-top: -2.3em;
+        z-index: 12;
+        margin-left: 1.8em;
+        margin-right: 1.8em;
+        padding: auto;
+        opacity: 0;
+        transition: 2s;
+        
+    }
+</style>
+
+<body>
+    <div>
+        <img id="fl1" src="flower-removebg-preview.png">
+        <img id="fl2" src="flower-removebg-preview.png">
+        <img src="design1-removebg-preview.png">
+        <img src="ganesh1.jpg" id="ganesh"><br>
+        <img src="ghot.png" class="ghot" id="g1">
+        <img src="ghot.png" class="ghot" id="g2">
+        <img src="ghot.png" class="ghot" id="g3">
+        <img src="ghot.png" class="ghot" id="g4">
+        <img src="ghot.png" class="ghot" id="g5">
+        <img src="ghot.png" class="ghot" id="g6">
+        <img src="ghot.png" class="ghot" id="g7">
+        <img src="ghot.png" class="ghot" id="g8">
+        <img src="ghot.png" class="ghot" id="g9">
+        <img src="ghot.png" class="ghot" id="g10">
+
+
+    </div>
+</body>
+<script>
+    setTimeout(function () {
+        var gan = document.getElementById("ganesh");
+        gan.style.opacity = "1";
+    }, 3000);
+    var g1 = document.getElementById("g1");
+    var g2 = document.getElementById("g2");
+    var g3 = document.getElementById("g3");
+    var g4 = document.getElementById("g4");
+    var g5 = document.getElementById("g5");
+    var g6 = document.getElementById("g6");
+    var g7 = document.getElementById("g7");
+    var g8 = document.getElementById("g8");
+    var g9 = document.getElementById("g9");
+    var g10 = document.getElementById("g10");
+    setTimeout(function () {
+        g1.style.opacity = "1";
+    }, 6500); 
+    setTimeout(function () {
+        g2.style.opacity = "1";
+    }, 6000); 
+    setTimeout(function () {
+        g3.style.opacity = "1";
+    }, 5500); 
+    setTimeout(function () {
+        g4.style.opacity = "1";
+    }, 5000); 
+    setTimeout(function () {
+        g5.style.opacity = "1";
+    }, 4500); 
+    setTimeout(function () {
+        g6.style.opacity = "1";
+    }, 4000); 
+    setTimeout(function () {
+        g7.style.opacity = "1";
+    }, 3500); 
+    setTimeout(function () {
+        g8.style.opacity = "1";
+    }, 3000); 
+    setTimeout(function () {
+        g9.style.opacity = "1";
+    }, 2500); 
+    setTimeout(function () {
+        g10.style.opacity = "1";
+    }, 2000);
+</script>
+
+</html>
